@@ -7,7 +7,7 @@ This project aims to detect and localize significant objects in a real time movi
 
 ## Prerequisites
 Following libraries have been used in this project:
-Matplot library
+Matplot 
 Glob2
 Imageio
 Numpy
