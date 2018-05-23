@@ -19,7 +19,7 @@ The code utilizes OpenCV's Harris Corner detector to locate key points in the in
 
 ## Step 2: Feature Extraction
 The next step involves constructing a square patch around each corner point and then it is passed to HOG feature descriptor. Gradients and magnitude are calculated for each image patch. Magnitudes are added for each bin range of gradient direction and then assembled into that. A histogram of features is obtained. Running this for all image patches followed by normalization in all RGB channels will give a feature space.
-## Step 3: CLustering
+## Step 3: Clustering
 K means clustering is used to group similar feature points. Similarity between feature points is decided on the minimal of distance of each feature point and centroid of the class. K can be varied. K represents the total no. of clusters(objects).
 ![Results](Results/beforeKmeans.png)
 ![Results](Results/afterkmeans.png)
